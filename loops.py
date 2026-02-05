@@ -6,16 +6,16 @@ t.speed(100)
 
 sidelength = 50
 rotate = 144
-def square(x,y):
+def star(x,y):
     for i in range(5):
         t.forward(x)
         t.right(144)
-square(5,144)
+star(5,144)
 
 def addSquares(iRange):
     length = 25
     for i in range(iRange):
-        square(length, 144)
+        star(length, 144)
         length += 5
         t.right(5)
 addSquares(60)
